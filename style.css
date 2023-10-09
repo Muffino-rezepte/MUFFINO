@@ -5,4 +5,5 @@ background-color: grey;
 
         li{
             list-style: none;
+                display: inline;
         }
