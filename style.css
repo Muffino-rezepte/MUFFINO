@@ -16,7 +16,7 @@
 
 @media(min-width:500px){
         body {
-                background-color: white;
+                background-color: #424242;
         }
 
         nav{
@@ -29,6 +29,8 @@
                 align-items: center;
                 text-decoration: none;
                 display: inline;
+                top: 0;
+                left: 0;
         }
         ul{
 
@@ -37,6 +39,8 @@
                 display: inline;
                 height: 20px;
                 width: 100%;
+                top: 30px;
+                margin-top: 30px;
 
         }
 
@@ -45,6 +49,8 @@
             padding-right: 20px;
             text-align: center;
             color: #ebdd8e;
+            top: 30px;
+            margin-top: 30px;
         
         
         
@@ -53,6 +59,62 @@
         ul li:hover{
             cursor: pointer;
             color: white;
+        }
+
+        #placeholder{
+            background-color: rgb(214, 214, 214);
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+            margin-top: 0;
+            top: 0;
+            left: 0;
+            height: 450px;
+        }
+
+        #startseite-rezept{
+            position: relative;
+            top: 50px;
+        }
+
+        #startseite-button-groß-button{
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: #141414;
+            border: 5px solid #141414;
+            border-radius: 30px;
+            width: 200px;
+            height: 30px;
+            color: #ebdd8e;
+            transition: width 1s;
+
+
+        }
+
+        #startseite-button-groß-button:hover{
+            transition: 1s;
+           background-color: #ebdd8e;
+           color: #141414;
+           border: #ebdd8e;
+           width: 250px;
+           border-radius: 0;
+           transition: 1s;
+
+        }
+
+        #startseite-button-groß-button:hover{
+            cursor: pointer;
+        }
+
+        #startseite-button-groß{
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+
         }
 
 }
