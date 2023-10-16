@@ -1,7 +1,7 @@
 /*HANDY ANSICHT*/
 
 
-@media(min-width:500px){
+@media(max-width:500px){
 
 }
 
@@ -14,7 +14,7 @@
 /*DESKTOP ANSICHT*/
 
 
-@media(max-width:500px){
+@media(min-width:500px){
         body {
                 background-color: white;
         }
