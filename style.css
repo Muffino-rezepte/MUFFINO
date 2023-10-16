@@ -85,6 +85,7 @@
             align-items: center;
             position: absolute;
             left: 50%;
+            transform: translate(-50%);
             background-color: #141414;
             border: 5px solid #141414;
             border-radius: 30px;
