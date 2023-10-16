@@ -15,5 +15,9 @@
 
 
 @media(max-width:500px){
+        body {
+                background-color: white;
+                
+        }
 
 }
