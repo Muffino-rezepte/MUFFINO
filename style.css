@@ -25,11 +25,34 @@
                 height: 50px;
                 position: fixed;
                 background-color: #141414;
+                text-align: center;
+                align-items: center;
+                text-decoration: none;
+                display: inline;
         }
         ul{
-                display: inline;
+
                 text-decoration: none;
                 color: #ebdd8e;
+                display: inline;
+                height: 20px;
+                width: 100%;
+
+        }
+
+        ul li{
+            display: inline;
+            padding-right: 20px;
+            text-align: center;
+            color: #ebdd8e;
+        
+        
+        
+        }
+
+        ul li:hover{
+            cursor: pointer;
+            color: white;
         }
 
 }
