@@ -20,12 +20,16 @@
         }
 
         nav{
-                color: #ebdd8e;
                 border-bottom: #ebdd8e thin solid;
                 width: 100%;
                 height: 50px;
                 position: fixed;
                 background-color: #141414;
+        }
+        ul{
+                display: inline;
+                text-decoration: none;
+                color: #ebdd8e;
         }
 
 }
