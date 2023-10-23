@@ -7,7 +7,120 @@
 
 
 
+#burger_menu{
+    background-color: transparent;
+    width: 190px;
+    height: 105px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    user-select: none;
+}
 
+#burger_link{
+    background-color: transparent;
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    z-index: 99999;
+    right: 0;
+}
+#burger_link:hover{
+    cursor: pointer;
+
+}
+#burger_line1{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    border-radius: 3px;
+    transition: transform 0.5s, top 0.5s;
+}
+
+#burger_line2{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border-radius: 3px;
+}
+
+#burger_line3{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border-radius: 3px;
+}
+
+#burger_dropdown{
+    width: 200px;
+    right: 0;
+    position: absolute;
+    height: 0px;
+    transition: height 0.5s, opacity 0.5s;
+    top: 0;
+    border-radius: 0px 0px 0px 15px;
+    z-index: 998;
+
+
+}
+
+#burger_content{
+    top: 0;
+    left: -20px;
+    z-index: 1;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.burger_li{
+    width: 100px;
+    list-style: none;
+    position: absolute;
+
+}
+
+#burger_itm1{
+    top: 0;
+}
+#burger_itm2{
+    top: 30px;
+}
+#burger_itm3{
+    top: 60px;
+}
+#burger_itm4{
+    top: 90px;
+}
+#burger_itm5{
+    top: 120px;
+}
+
+.burger_li:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+#copyright{
+    font-size: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    top: 155px;
+    position: absolute;
+    left: 30px;
+}
 
 
 
@@ -53,6 +166,7 @@
             padding-right: 10px;
             padding-left: 10px;
             margin-right: 10px;
+            transition: border-bottom 0.5s;
         
         
         
@@ -61,7 +175,10 @@
         ul li:hover{
             cursor: pointer;
             color: white;
+            transition: border-bottom 0.5s;
             border-bottom: thin solid rgb(255, 255, 255);
+            transition: 0.5s;
+
         }
 
         #placeholder{
@@ -128,6 +245,10 @@
             position: absolute;
             top: 0;
             left: 0;
+        }
+
+        #ueberschrift{
+            font-family: 'Nanum Pen Script';
         }
     
 
