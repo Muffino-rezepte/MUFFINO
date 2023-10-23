@@ -249,7 +249,20 @@
 
         #ueberschrift{
             font-family: 'Nanum Pen Script';
+            margin-left: 10px;
         }
+
+
+
+
+
+
+
+        /*Burger*/
+        #burger_menu{
+            display: none;
+        }
+        
     
 
 }
