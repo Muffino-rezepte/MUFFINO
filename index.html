@@ -9,11 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
 </head>
 <body>
+    <div id="resp-content">
     <header>
-        <nav>
+        <img src="logo_transparent.png" alt="logo_resp" id="logo_resp">
+        <nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">
             <img src="logo_transparent.png" alt="logo" id="logohead">
             <ul>
-                <li >Rezepte</li>
+                <li>Rezepte</li>
                 <li>Tipps & Tricks</li>
                 <li>Unsere Empfehlungen</li>
                 <li>Spenden</li>
@@ -33,37 +35,45 @@
             <li class="burger_li" id="burger_itm1">Home</li>
             <li class="burger_li" id="burger_itm2">Shop</li>
             <li class="burger_li" id="burger_itm3">Kontakt</li>
-            <li class="burger_li" id="burger_itm4">Partner</li>
-            <!--<li class="burger_li" id="burger_itm5">Extra</li>-->
-        </ul>
-        <span id="copyright">Made by Marcel Plöchl</span>
+            <li class="burger_li" id="burger_itm4">Partner</li>        </ul>
     </div>
 <div id="startseite-rezept">
-   <h1 id="ueberschrift">REZEPT</h1>
+    <div id="verlauf">
+    <div id="startseite-text">
+   <h1 id="ueberschrift">Heidelbeertraum</h1>
    <div id="zutaten">
-    <li class="startseite-menge">3 Stk</li><li class="startseite-rezept-element">Eier</li>
-    <li class="startseite-menge">140g</li><li class="startseite-rezept-element">Staubzucker</li>
-    <li class="startseite-menge">1 Pk</li><li class="startseite-rezept-element">Vanillezucker</li>
-    <li class="startseite-menge">80g</li><li class="startseite-rezept-element">Butter</li>
-    <li class="startseite-menge">200g</li><li class="startseite-rezept-element">Mehl</li>
-    <li class="startseite-menge">0.5Pk</li><li class="startseite-rezept-element">Backpulver</li>
-    <li class="startseite-menge">100ml</li><li class="startseite-rezept-element">Milch</li>
+    <li class="startseite-menge">3 Stk</li>
+    <li class="startseite-menge">140g</li>
+    <li class="startseite-menge">1 Pk</li>
+    <li class="startseite-menge">80g</li>
+    <li class="startseite-menge">200g</li>
+    <li class="startseite-menge">0.5 Pk</li>
+    <li class="startseite-menge">100ml</li>
    </div>
+   <div id="zutaten">
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Eier</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Staubzucker</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Vanillezucker</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Butter</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Mehl</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Backpulver</li>
+    <li class="startseite-menge"></li><li class="startseite-rezept-element">Milch</li>
+   </div>
+</div>
+
+</div>
 </div>
 <div id="startseite-button-groß">
     <button id="startseite-button-groß-button">Rezept ansehen</button>
 </div>
 
-<div id="startseite-bild-groß">
-    <div id="placeholder"></div>
-</div>
-
 <div id="startseite-extraplatz-unten">
+    <h2 id="startseite-h2">Du suchst eine Herausforderung?</h2>
 
 </div>
 
 <div id="startseite-randomizer-button">
-    <button id="startseite-randomizer-button-button"></button>
+    <button id="startseite-randomizer-button-button">Neues Rezept</button>
 </div>
 
 <footer id="footer">
@@ -76,6 +86,8 @@
         </ul>
     </div>
 </footer>
+
+</div>
 
     
 
