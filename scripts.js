@@ -26,8 +26,14 @@ function burger_openmenu(){
 
     var burgercon = document.getElementById('burger_content');
     burgercon.style.opacity = 1;
-
+    burgercon.style.display = "block";
     burgercon.style.transition = "opacity 0.5s";
+
+    var menu = document.getElementById('burger_menu');
+    menu.style.height = "305px";
+    menu.style.width = "55%";
+    menu.style.right = "10px";
+    
 
 
     }else{
@@ -57,7 +63,13 @@ function burger_openmenu(){
     
     var burgercon = document.getElementById('burger_content');
     burgercon.style.opacity = 0;
+    burgercon.style.display = "none";
     burgercon.style.transition = "opacity 0.5s";
+
+    var menu = document.getElementById('burger_menu');
+    menu.style.height = "25px";
+    menu.style.width = "40px";
+    menu.style.right = "10px";
     }
 
 
