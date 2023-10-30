@@ -99,20 +99,25 @@ ul{
 }
 
 
-
+#burger_lines{
+    right: 10px;
+    position: absolute;
+}
 
 
 #burger_menu{
     background-color: transparent;
-    width: 55%;
-    height: 305px;
+    width: 40px;
+    height: 25px;
     position: fixed;
+    right: 0;
     top: 20px;
-    right: 10px;
     z-index: 999;
     user-select: none;
     color: white;
 }
+
+
 
 
 #startseite-button-groß-button{
@@ -201,12 +206,15 @@ ul{
 
 #burger_content{
     top: 50px;
+    
     z-index: 1000;
     font-size: 30px;
     text-decoration: none;
     color: white;
-    display: block;
+    display: grid;
+    place-items: center;
     opacity: 0;
+    width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
@@ -222,24 +230,32 @@ ul{
 }
 
 #burger_itm1{
-    top: -100px;
-    left: 0;
+    top: 0px;
+    text-align: center;
     margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 #burger_itm2{
     top: 30px;
     text-align: center;
     margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 #burger_itm3{
     top: 60px;
     text-align: center;
     margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 #burger_itm4{
     top: 90px;
     text-align: center;
     margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
