@@ -95,9 +95,10 @@ function up(){
 }
 
 window.addEventListener('load', () => {
-    // Die Seite ist geladen, entferne die Ladeanimation
-    const loader = document.querySelector('.loader');
-    var blackbox = document.getElementById('blackbox');
-    loader.style.display = 'none';
-    blackbox.style.display = 'none';
+    setTimeout(() => {
+        const loader = document.querySelector('.loader');
+        const blackbox = document.getElementById('blackbox');
+        loader.style.display = 'none';
+        blackbox.style.display = 'none';
+    }, 1000); // 1000 Millisekunden (1 Sekunde) Verzögerung
 });
