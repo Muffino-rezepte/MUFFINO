@@ -93,3 +93,11 @@ function up(){
     navdrop.style.transition = "all 0.5s";
     
 }
+
+window.addEventListener('load', () => {
+    // Die Seite ist geladen, entferne die Ladeanimation
+    const loader = document.querySelector('.loader');
+    var blackbox = document.getElementById('blackbox');
+    loader.style.display = 'none';
+    blackbox.style.display = 'none';
+});
