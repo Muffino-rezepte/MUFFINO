@@ -5,7 +5,7 @@ function burger_openmenu(){
     drop.style.opacity = 1;
     drop.style.height = "100%";
     drop.style.backgroundColor = "rgb(26, 26, 26)";
-    drop.style.borderRadius = "0px 0px 0px 0px"
+    drop.style.borderRadius = "0px 0px 0px 0px";
     dropvar = 1;
 
     var line1 = document.getElementById('burger_line1');
@@ -15,7 +15,7 @@ function burger_openmenu(){
     line1.style.transition = "transform 0.5s, top 0.5s";
 
     var line2 = document.getElementById('burger_line2');
-    line2.style.opacity = "0"
+    line2.style.opacity = "0";
     line2.style.transition = "opacity 0s";
 
     var line3 = document.getElementById('burger_line3');
@@ -31,8 +31,7 @@ function burger_openmenu(){
 
     var menu = document.getElementById('burger_menu');
     menu.style.height = "305px";
-    menu.style.width = "55%";
-    menu.style.right = "10px";
+    menu.style.width = "90%";
     
 
 
@@ -69,7 +68,7 @@ function burger_openmenu(){
     var menu = document.getElementById('burger_menu');
     menu.style.height = "25px";
     menu.style.width = "40px";
-    menu.style.right = "10px";
+    menu.style.right = "0";
     }
 
 
