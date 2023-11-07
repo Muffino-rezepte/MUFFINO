@@ -9,6 +9,39 @@
         overflow-x: hidden;
         max-width: 100%;
 }
+#footer{
+    z-index: 9999;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+#responsive-headbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    transition: 0.6s;
+}
+
+.navbar.sticky{
+    background-color: black;
+    transition: 0.6s;
+}
+
+#responsive-headbar span{
+    color: white;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-family: Nunito;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 3px black);
+}
 
 #search_icon{
     display: none;
@@ -18,7 +51,14 @@
     display: none;
 }
 #logohead{
-    display: none;
+    position: fixed;
+    z-index: 100000000;
+    display: block;
+    width: 150px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
 }
 
 #nav_bookmark{
@@ -61,7 +101,8 @@ ul{
 
 #ueberschrift{
     color: white;
-    top: 50px;
+    position: relative;
+    top: 40px;
     font-size: 280%;
     margin-bottom: 0;
     filter: drop-shadow(2px 2px 2px black);
@@ -84,7 +125,7 @@ ul{
 #startseite-extraplatz-unten{
     background-color: #ebdd8e;
     width: 100%;
-    height: 800px;
+    height: 500px;
     position: absolute;
     top: 500px;
     left: 0;
@@ -94,7 +135,12 @@ ul{
 }
 
 #startseite-h2{
-    width: 80%;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+
 
 }
 
@@ -110,8 +156,8 @@ ul{
     width: 40px;
     height: 25px;
     position: fixed;
-    right: 0;
-    top: 20px;
+    top: 13px;
+    right: 10px;
     z-index: 999;
     user-select: none;
     color: white;
@@ -132,6 +178,7 @@ ul{
     transition: width 0.2s;
     width: 200px;
     height: 30px;
+    border-radius: 50px;
 }
 
 #startseite-button-groß-button:hover{
@@ -200,6 +247,7 @@ ul{
 
     border-radius: 0px 0px 0px 100%;
     z-index: 999;
+    align-items: center;
 
 
 }
@@ -221,10 +269,11 @@ ul{
 }
 
 .burger_li{
-    width: 100px;
+    width: 90%;
     list-style: none;
     position: absolute;
     left: 0;
+    margin-top: 10px;
 
 
 }
@@ -234,28 +283,28 @@ ul{
     text-align: center;
     margin-top: 20px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
 }
 #burger_itm2{
     top: 30px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
 }
 #burger_itm3{
     top: 60px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
 }
 #burger_itm4{
     top: 90px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 110px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
 }
 
 
@@ -507,10 +556,7 @@ ul{
         }
 
         #logohead{
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 70px;
+            display: none;
         }
 
         #logohead:hover{
