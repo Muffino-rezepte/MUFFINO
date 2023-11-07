@@ -1,3 +1,10 @@
+window.addEventListener("scroll", function(){
+    var header = document.getElementsByClassName("navbar") [0]
+    header.classList.toggle("sticky", window.scrollY > 0);
+    header.style.transition = "0.7s";
+})
+
+
 let dropvar = 0;
 function burger_openmenu(){
     if(dropvar == 0){
@@ -7,6 +14,10 @@ function burger_openmenu(){
     drop.style.backgroundColor = "rgb(26, 26, 26)";
     drop.style.borderRadius = "0px 0px 0px 0px";
     dropvar = 1;
+
+    var logo = document.getElementById('logohead');
+    logo.style.opacity = 1;
+    logo.style.transition = "opacity 1s";
 
     var line1 = document.getElementById('burger_line1');
     line1.style.transform = "rotate(45deg)";
@@ -41,6 +52,10 @@ function burger_openmenu(){
         drop.style.opacity = 0;
         drop.style.transition = "height 0.5s, opacity 0.5s";
     dropvar = 0;
+
+    var logo = document.getElementById('logohead');
+    logo.style.opacity = 0;
+    logo.style.transition = "opacity 0s";
 
     var line1 = document.getElementById('burger_line1');
     line1.style.transform = "rotate(0deg)";
