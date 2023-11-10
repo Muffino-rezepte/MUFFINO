@@ -11,7 +11,7 @@
 }
 #footer{
     z-index: 998;
-    background-color: black;
+    background-color: #141414;
     width: 100%;
     height: 60px;
     left: 0;
@@ -389,6 +389,103 @@ ul{
 }
 
 
+
+
+#blackbox{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000c2;
+    z-index: 9999;
+
+}
+.loader {
+    position: fixed;
+    z-index: 100000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        transform: rotate(45deg);
+      }
+      .loader::before {
+        content: '';  
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: -24px;
+        animation: animloader 4s ease infinite;
+      }
+      .loader::after {
+        content: '';  
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background: #ebdd8e;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        animation: animloader2 2s ease infinite;
+      }
+      
+      @keyframes animloader {
+        0% {
+          box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+        }
+        12% {
+          box-shadow: 0 24px #ebdd8e, 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+        }
+        25% {
+          box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+        }
+        37% {
+          box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px rgba(255, 255, 255, 0);
+        }
+        50% {
+          box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+        }
+        62% {
+          box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+        }
+        75% {
+          box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+        }
+        87% {
+          box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px #ebdd8e;
+        }
+        100% {
+          box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+        }
+      }
+      
+      @keyframes animloader2 {
+        0% {
+          transform: translate(0, 0) rotateX(0) rotateY(0);
+        }
+        25% {
+          transform: translate(100%, 0) rotateX(0) rotateY(180deg);
+        }
+        50% {
+          transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
+        }
+        75% {
+          transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
+        }
+        100% {
+          transform: translate(0, 0) rotateX(0) rotateY(360deg);
+        }
+      }
+          
+    
+    
+
 }
 
 /*DESKTOP ANSICHT*/
@@ -516,7 +613,7 @@ ul{
 
         #startseite-extraplatz-unten{
             background-color: #ebdd8e;
-            height: 200px;
+            height: 250px;
             width: 110%;
             position: relative;
             margin-left: -5%;
@@ -588,8 +685,7 @@ ul{
             background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(39, 39, 39, 0) 100%);
             border-radius: 0px 0px 20px 0px;
             padding-right: 20px;
-            padding-bottom: 10px;
-            padding-bottom: 100%;
+            padding-bottom: 150px;
             width: 100%;
         }
 
@@ -630,15 +726,44 @@ ul{
         }
 
         #footer{
-            display: none;
+            z-index: 999;
+            width: 100%;
+            height: 100px;
+            color: white;
+            position: absolute;
+            left: 0;
+            background-color: #141414   ;
+        
+        }
+        
+        #footer_ul{
+            color: white;
+            position: absolute;
+            top: 0;
+            align-items: center;
+            font-family: Nunito;
+            margin-bottom: 0;
+            height: 60px;
+            left: 50%;
+            transform: translate(-50%);
+        
+        }
+        
+        #footer_ul li{
+            text-align: center;
+            width: 90px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-top: 0;
         }
 
-        #logohead{
-            display: none;
-        }
-
-        #logohead:hover{
-            cursor: pointer;
+        #logo_resp{
+            display: block;
+            position: fixed;
+            height: 70px;
+            top: 0;
+            left: 0;
+            z-index: 9999;
         }
 
 
@@ -659,30 +784,32 @@ ul{
         #footer{
             width: 100%;
             height: 50px;
-            background-color: rgb(0, 0, 0);
             position: absolute;
             left: 0;
             z-index: 999;
-        }
-        
-        #footer_placeholder{
-            height: 600px;
-            width: 100%;
-            background-color: rgb(221, 221, 221);
+            background-color:#141414;
+
+
         }
         
         
         #footer_ul{
             display: inline;
             width: 100%;
-            height: 40px;
+            height: auto;
         }
         
         .footer_li{
             text-decoration: none;
             display: inline-block;
-            padding: 10px;
             color: white;
+        }
+
+        .space1{
+            position: relative;
+            height: 200px;
+            width: 100%;
+
         }
         
 
@@ -729,6 +856,27 @@ ul{
             z-index: 9999;
 
         }
+
+        #muffin_herausforderung{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #herausforderung_button{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 200px;
+            background-color: #141414;
+            border: 5px solid #141414;
+            border-radius: 30px;
+            width: 160px;
+            height: 30px;
+            color: #ebdd8e;
+
+        }
+
 
         .loader {
             position: absolute;
