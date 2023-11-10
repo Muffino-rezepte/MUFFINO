@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muffino | Startseite</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="newlogo.png">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
 </head>
 <body>
     <div id="resp-content">
     <header>
-        <img src="logo_transparent.png" alt="logo_resp" id="logo_resp">
+        <a href="index.html"><img src="newlogo.png" alt="logo_resp" id="logo_resp"></a>
         <nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">
 
             <ul>
@@ -34,7 +37,7 @@
         <div id="burger_link" onclick="burger_openmenu()"></div>
 
     </div>
-    <img src="logo_transparent.png" alt="logo" id="logohead">
+    <img src="newlogo.png" alt="logo" id="logohead">
         <ul id="burger_content">
             <!--Hier die Menüpunkte bearbeiten-->
             <li class="burger_li" id="burger_itm1">Rezepte</li>
@@ -69,13 +72,14 @@
 
 </div>
 </div>
+<div id="startseite-button-groß">
+    <a href="unterseite_rezept_001.html"><button id="startseite-button-groß-button">Rezept ansehen</button></a>
+</div>
 <div id="content">
 </div>
 <div id="content2">
 </div>
-<div id="startseite-button-groß">
-    <a href="unterseite_rezept_001.html"><button id="startseite-button-groß-button">Rezept ansehen</button></a>
-</div>
+
 
 <div id="startseite-extraplatz-unten">
     <h2 id="startseite-h2">Du suchst eine Herausforderung?</h2>
