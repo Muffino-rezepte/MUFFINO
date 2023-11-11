@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Burger Button verschiebt sich!-->
 <!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
 <html lang="en">
 <head>
@@ -11,14 +10,17 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
 </head>
+
+<!--SEITE FERTIG - DON'T TOUCH-->
 <body>
     <div id="resp-content">
     <header>
-        <a href="index.html"><img src="newlogo.png" alt="logo_resp" id="logo_resp"></a>
-        <nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">
+        <a href="index.html"><img src="logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+        <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+            <nav id="nav_nav">
 
             <ul>
-                <li>Rezepte</li>
+                <a href="rezepte.html" class="link"><li>Rezepte</li></a>
                 <li>Tipps & Tricks</li>
                 <li>Unsere Empfehlungen</li>
                 <li>Spenden</li>
@@ -37,10 +39,10 @@
         <div id="burger_link" onclick="burger_openmenu()"></div>
 
     </div>
-    <img src="newlogo.png" alt="logo" id="logohead">
+    <a href="index.html"><img src="logo_transparent.png" alt="logo" id="logohead"></a>
         <ul id="burger_content">
             <!--Hier die Menüpunkte bearbeiten-->
-            <li class="burger_li" id="burger_itm1">Rezepte</li>
+            <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
             <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
             <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
             <li class="burger_li" id="burger_itm4">Spenden</li>        
@@ -85,7 +87,7 @@
     <h2 id="startseite-h2">Du suchst eine Herausforderung?</h2>
     <div id="img">    <img src="herausforderung.png" alt="herausforderung" id="muffin_herausforderung">
     </div>
-    <button id="herausforderung_button">Hier ansehen</button>
+    <a href="r001.html"><button id="herausforderung_button">Hier ansehen</button></a>
 
 </div>
 
@@ -93,6 +95,32 @@
     <button id="startseite-randomizer-button-button">Neues Rezept</button>
 </div>
 
+<div id="startseite-ideen">
+    <div id="ideen_div">
+        <h1>Du hast neue Ideen?</h1>
+        <h2>Teile sie mit uns!</h2>
+        <div id="email_background"></div>
+        <div id="email">
+            <span id="email_span">AN: Muffino</span>
+            <span id="email_span_head">Thema: Neue Idee!</span>
+            <hr id="email_span_hr">
+
+            <a href= "mailto:marcel.ploechl@tfs-haslach.at"><button id="email_span_btn">E-Mail senden</button></a>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+
+
+
+
+
+
+<!--DON'T TOUCH-->
 <footer id="footer">
     <div id="footer_div">
         <ul id="footer_ul">
