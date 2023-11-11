@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="r001-image">
+    <div id="resp-content">
+    <header>
+        <a href="index.html"><img src="logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+        <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+            <nav id="nav_nav">
+            <ul>
+                <li>Rezepte</li>
+                <li>Tipps & Tricks</li>
+                <li>Unsere Empfehlungen</li>
+                <li>Spenden</li>
+                <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="search_106530.png" alt="seach_icon" id="search_icon"></li>
+                <img src="bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+            </ul>
+    </nav>
+</header>
+<div id="responsive-headbar" class="navbar"><span>MUFFINO</span></div>
+    <div id="burger_dropdown"></div>
+    <div id="burger_menu">
+        <div id="burger_lines">
+        <div id="burger_line1"></div>
+        <div id="burger_line2"></div>
+        <div id="burger_line3"></div>
+        <div id="burger_link" onclick="burger_openmenu()"></div>
+
+    </div>
+    <a href="index.html"><img src="logo_transparent.png" alt="logo" id="logohead"></a>
+        <ul id="burger_content">
+            <!--Hier die Menüpunkte bearbeiten-->
+            <li class="burger_li" id="burger_itm1">Rezepte</li>
+            <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+            <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+            <li class="burger_li" id="burger_itm4">Spenden</li>        
+        </ul>
+    </div>
+
+
+
+    <!--Inhalt-->
+    <div id="r001-rezeptansicht">
+        <img src="bigger.png" alt="vergrößerung" id="bigger" onclick="textsizebig()">
+        <img src="smaller.png" alt="vergrößerung" id="smaller" onclick="textsizesmall()">
+        <h1 id="r001-h1">Ribiselmuffin</h1>
+        <div id="r001-anleitung">
+
+            <span>Für diese flaumigen Muffins zuerst in einer Schüssel die Eier schaumig schlagen. </span><br>
+            <span>Den Staubzucker mit dem Vanillezucker einrieseln lassen.</span> <br>
+            <span>Die in Flocken geschnittene Butter hinzufügen. Schön schaumig schlagen.</span><br>
+            <span>Nun das Mehl mit dem Backpulver gut vermischen.</span><br>
+            <span>Danach die Milch und das Mehl abwechselnd in die Masse einrühren.</span><br>
+            <span>Ein Muffinblech mit Papiermuffinförmchen ausfüllen und die Masse in die Förmchen füllen.</span>
+            <span>Die Förmchen dürfen nur bis zur Hälfte oder etwas darüber mit der Masse gefüllt werden.</span>
+            <span>Wenn man keine Papierförmchen hat, kann man diese auch weglassen und das Muffinblech etwas mit Butter einfetten.</span>
+            <span>Die Muffins bei ca. 180 Grad im vorgeheizten Backofen bei Ober- und Unterhitze ca. 30 bis 40 Min (mittlere Schiene) backen. </span>
+            <span>Danach die Muffins aus dem Backofen nehmen und abkühlen lassen.</span>
+        </div>
+    </div>
+
+    <div id="rezeptansicht-small">
+        <h2>Zutaten</h2>
+
+        <ul id="rezeptansicht-small-ul">
+            <li>250g - Dinkelmehl</li><br>
+            <li>1 Pk - Backpulver</li><br>
+            <li>125g - Staubzucker</li><br>
+            <li>2 Stk - Eier</li><br>
+            <li>1 Pk - Vanillezucker</li><br>
+            <li>250g - Joghurt (1% Fett)</li><br>
+            <li>250g - Heidelbeeren</li><br>
+        </ul>
+    </div>
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
