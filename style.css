@@ -619,7 +619,7 @@
 
   #r001-rezeptansicht {
     width: calc(100% - 10%);
-    height: calc(100% - 40%);
+    height: calc(100% - 50%);
     position: absolute;
     background-color: #dadadaa9;
     z-index: 999;
@@ -706,7 +706,7 @@
     position: fixed;
     bottom: 50px;
     width: calc(100% - 10%);
-    height: 200px;
+    height: calc(100% - 70%);
     background-color: #dadadaa9;
     left: 50%;
     transform: translate(-50%);
