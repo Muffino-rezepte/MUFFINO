@@ -40,6 +40,16 @@ function burger_openmenu(){
     burgercon.style.display = "block";
     burgercon.style.transition = "opacity 0.5s";
 
+    var itm1 = document.getElementById('burger_itm1');
+    var itm2 = document.getElementById('burger_itm2');
+    var itm3 = document.getElementById('burger_itm3');
+    var itm4 = document.getElementById('burger_itm4');
+    itm1.style.width = "100%";
+    itm2.style.width = "100%";
+    itm3.style.width = "100%";
+    itm4.style.width = "100%";
+    
+
     var menu = document.getElementById('burger_menu');
     menu.style.height = "305px";
     menu.style.width = "90%";
@@ -83,7 +93,16 @@ function burger_openmenu(){
     var menu = document.getElementById('burger_menu');
     menu.style.height = "25px";
     menu.style.width = "40px";
-    menu.style.right = "0";
+    menu.style.right = "10px";
+
+    var itm1 = document.getElementById('burger_itm1');
+    var itm2 = document.getElementById('burger_itm2');
+    var itm3 = document.getElementById('burger_itm3');
+    var itm4 = document.getElementById('burger_itm4');
+    itm1.style.width = "0";
+    itm2.style.width = "0";
+    itm3.style.width = "0";
+    itm4.style.width = "0";
     }
 
 
@@ -117,3 +136,30 @@ window.addEventListener('load', () => {
         blackbox.style.display = 'none';
     }, 1000); // 1000 Millisekunden (1 Sekunde) Verzögerung
 });
+
+let num = 20;
+
+
+function textsizebig(){
+    let sizer = document.getElementById('r001-anleitung');
+    if (num <= 60){
+        val = num += 3;
+        val = val + "px";
+        sizer.style.fontSize = val;
+    }
+
+
+}
+
+function textsizesmall(){
+    let sizer = document.getElementById('r001-anleitung');
+    if (num >= 10){
+        val = num -= 3;
+        val = val + "px";
+        sizer.style.fontSize = val;
+    }
+
+
+    }
+
+
