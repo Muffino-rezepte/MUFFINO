@@ -167,7 +167,7 @@ let num = 20;
 
 function textsizebig(){
     let sizer = document.getElementById('r001-anleitung');
-    let rezept = document.getElementById('rezeptansicht-small');
+    let rezept = document.getElementById('rezeptansicht-small-div');
     if (num <= 60){
         val = num += 3;
         val = val + "px";
@@ -180,7 +180,7 @@ function textsizebig(){
 
 function textsizesmall(){
     let sizer = document.getElementById('r001-anleitung');
-    let rezept = document.getElementById('rezeptansicht-small');
+    let rezept = document.getElementById('rezeptansicht-small-div');
     if (num >= 10){
         val = num -= 3;
         val = val + "px";
