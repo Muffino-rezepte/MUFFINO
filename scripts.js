@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
         const blackbox = document.getElementById('blackbox');
         loader.style.display = 'none';
         blackbox.style.display = 'none';
-    }, 500); // 1000 Millisekunden (1 Sekunde) Verzögerung
+    }, 1); 
 });
 
 
@@ -80,6 +80,8 @@ function burger_openmenu(){
     var menu = document.getElementById('burger_menu');
     menu.style.height = "305px";
     menu.style.width = "90%";
+    menu.style.display = "block";
+    menu.style.top = "70px";
     
 
 
@@ -116,12 +118,15 @@ function burger_openmenu(){
     var burgercon = document.getElementById('burger_content');
     burgercon.style.opacity = 0;
     burgercon.style.display = "none";
+    burgercon.style.right = "-1000px";
     burgercon.style.transition = "opacity 0.5s";
 
     var menu = document.getElementById('burger_menu');
     menu.style.height = "25px";
     menu.style.width = "40px";
     menu.style.right = "10px";
+    menu.style.display = "none";
+    menu.style.top = "-1000px";
 
     var itm1 = document.getElementById('burger_itm1');
     var itm2 = document.getElementById('burger_itm2');
@@ -162,10 +167,12 @@ let num = 20;
 
 function textsizebig(){
     let sizer = document.getElementById('r001-anleitung');
+    let rezept = document.getElementById('rezeptansicht-small');
     if (num <= 60){
         val = num += 3;
         val = val + "px";
         sizer.style.fontSize = val;
+        rezept.style.fontSize = val;
     }
 
 
@@ -173,10 +180,12 @@ function textsizebig(){
 
 function textsizesmall(){
     let sizer = document.getElementById('r001-anleitung');
+    let rezept = document.getElementById('rezeptansicht-small');
     if (num >= 10){
         val = num -= 3;
         val = val + "px";
         sizer.style.fontSize = val;
+        rezept.style.fontSize = val;
     }
 
 
