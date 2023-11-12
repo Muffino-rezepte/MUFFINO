@@ -1492,6 +1492,53 @@
 
   }
 
+  #rezeptansicht-small-div{
+    color: black;
+    z-index: 999;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    font-family: Nunito;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+    height: 70%;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  #rezeptansicht-small-div::-webkit-scrollbar {
+    width: 10px;
+    background-color: #dadada00;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000;
+
+  }
+
+  #rezeptansicht-small-div::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 94, 94);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000;
+
+  }
+
+  #rezeptansicht-small-div::-webkit-scrollbar-thumb:hover {
+    background-color: #ebdd8e;
+    cursor: pointer;
+    z-index: 10000;
+
+  }
+
+  #rezeptansicht-small-div::-webkit-scrollbar-track {
+    background-color: #dadada00;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
   .rezeptansicht-small-li{
     padding-left: 10px;
   }
@@ -1507,6 +1554,7 @@
     color: black;
     top: 100px;
     font-size: 18px;
+    display: inline-block;
   }
 
 
