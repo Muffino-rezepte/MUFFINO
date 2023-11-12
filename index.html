@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <!--LI ELEMENTE FIXEN-->
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,24 +31,24 @@
             </ul>
     </nav>
 </header>
-<a href="index.html"><div id="responsive-headbar" class="navbar"><span>MUFFINO</span></div></a>
+<div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+<a href="index.html"><img src="logo_transparent.png" alt="logo" id="logohead"></a>
     <div id="burger_dropdown"></div>
-    <div id="burger_menu">
-        <div id="burger_lines">
+    <div id="burger_lines">
         <div id="burger_line1"></div>
         <div id="burger_line2"></div>
         <div id="burger_line3"></div>
         <div id="burger_link" onclick="burger_openmenu()"></div>
 
     </div>
-    <a href="index.html"><img src="logo_transparent.png" alt="logo" id="logohead"></a>
+    <div id="burger_menu">
         <ul id="burger_content">
             <!--Hier die Menüpunkte bearbeiten-->
+            <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
             <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
             <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
             <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
             <li class="burger_li" id="burger_itm4">Spenden</li>  
-            <input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="search_106530.png" alt="seach_icon" id="search_icon_resp">
 
         </ul>
     </div>
