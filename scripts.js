@@ -5,6 +5,32 @@ window.addEventListener("scroll", function(){
 })
 
 
+
+
+
+
+
+
+
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loader = document.querySelector('.loader');
+        const blackbox = document.getElementById('blackbox');
+        loader.style.display = 'none';
+        blackbox.style.display = 'none';
+    }, 500); // 1000 Millisekunden (1 Sekunde) Verzögerung
+});
+
+
+
+
+
+
+
+
+
+
 let dropvar = 0;
 function burger_openmenu(){
     if(dropvar == 0){
@@ -17,6 +43,7 @@ function burger_openmenu(){
 
     var logo = document.getElementById('logohead');
     logo.style.opacity = 1;
+    logo.style.bottom = "20px";
     logo.style.transition = "opacity 1s";
 
     var line1 = document.getElementById('burger_line1');
@@ -65,6 +92,7 @@ function burger_openmenu(){
 
     var logo = document.getElementById('logohead');
     logo.style.opacity = 0;
+    logo.style.bottom = "-200px";
     logo.style.transition = "opacity 0s";
 
     var line1 = document.getElementById('burger_line1');
@@ -128,14 +156,6 @@ function up(){
     
 }
 
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        const loader = document.querySelector('.loader');
-        const blackbox = document.getElementById('blackbox');
-        loader.style.display = 'none';
-        blackbox.style.display = 'none';
-    }, 1000); // 1000 Millisekunden (1 Sekunde) Verzögerung
-});
 
 let num = 20;
 
