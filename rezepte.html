@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body>
+    <div id="resp-content">
+    <header>
+        <a href="index.html"><img src="logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+        <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+            <nav id="nav_nav">
+
+            <ul>
+                <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                <li>Tipps & Tricks</li>
+                <li>Unsere Empfehlungen</li>
+                <li>Spenden</li>
+                <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="search_106530.png" alt="seach_icon" id="search_icon"></li>
+                <img src="bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+            </ul>
+    </nav>
+</header>
+<div id="responsive-headbar" class="navbar"><span>MUFFINO</span></div>
+    <div id="burger_dropdown"></div>
+    <div id="burger_menu">
+        <div id="burger_lines">
+        <div id="burger_line1"></div>
+        <div id="burger_line2"></div>
+        <div id="burger_line3"></div>
+        <div id="burger_link" onclick="burger_openmenu()"></div>
+
+    </div>
+    <a href="index.html"><img src="logo_transparent.png" alt="logo" id="logohead"></a>
+        <ul id="burger_content">
+            <!--Hier die Menüpunkte bearbeiten-->
+            <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+            <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+            <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+            <li class="burger_li" id="burger_itm4">Spenden</li>  
+            <input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="search_106530.png" alt="seach_icon" id="search_icon_resp">
+
+        </ul>
+    </div>
+
+
+
+    <!--Inhalt-->
+
+    <div id="rezepte-content">
+        <div id="rezepte-con-itm1">
+            <div class="rezepte-con-black"></div>
+            <h1>SCHOKOLADE</h1>
+            <button class="rezepte-con-btn">ANSEHEN</button>
+        </div>
+        <div id="rezepte-con-itm2">
+            <div class="rezepte-con-black"></div>
+            <h1>HEIDELBEEREN</h1>
+            <button class="rezepte-con-btn">ANSEHEN</button>
+        </div>
+        <div id="rezepte-con-itm3">
+            <div class="rezepte-con-black"></div>
+            <h1>RIBISEL</h1>
+            <button class="rezepte-con-btn">ANSEHEN</button>
+        </div>
+        <div id="rezepte-con-itm4">
+            <div class="rezepte-con-black"></div>
+            <h1>ZITRONE</h1>
+            <button class="rezepte-con-btn">ANSEHEN</button>
+        </div>
+
+    </div>
+
+
+
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
