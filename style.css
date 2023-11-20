@@ -89,7 +89,7 @@
   #verlauf {
     width: 100%;
     position: absolute;
-    height: 500px;
+    height: 540px;
     background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(39, 39, 39, 0) 100%);
 
   }
@@ -118,19 +118,7 @@
 
   }
 
-  #startseite-extraplatz-unten {
-    background-color: #ebdd8e;
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 500px;
-    left: 0;
-    filter: drop-shadow(-5px -5px 5px #000000);
-    font-family: Nunito;
-    text-align: center;
-    display: inline;
-    z-index: 998;
-  }
+
 
   #content {
     position: relative;
@@ -147,23 +135,48 @@
     background-color: rgb(22, 22, 22);
   }
 
-  #muffin_herausforderung {
-    height: 150px;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.301));
-  }
+
 
   #img {
     width: 100%;
   }
 
+
+
+  #startseite-randomizer-button {
+    display: none;
+  }
+  #startseite-extraplatz-unten {
+    background-color: #141414;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    font-family: Nunito;
+    text-align: center;
+    display: inline;
+    z-index: 998;
+    border-bottom: #ebdd8e 2px solid;
+  }
+  #startseite-h2 {
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    color: white;
+
+
+  }
   #herausforderung_button {
     z-index: 998;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    background-color: #141414;
-    border: 5px solid #141414;
-    color: #ebdd8e;
+    background-color: #ebdd8e;
+    border: 5px solid #ebdd8e;
+    color: #141414;
     transition: width 0.2s;
     width: 200px;
     height: 30px;
@@ -178,20 +191,6 @@
     transition: 0.2s;
     filter: drop-shadow(3px 3px 10px black);
     cursor: pointer;
-  }
-
-  #startseite-randomizer-button {
-    display: none;
-  }
-
-  #startseite-h2 {
-    width: 50%;
-    text-align: center;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%);
-
-
   }
 
 
@@ -875,6 +874,46 @@
   border-radius: 3px;
 }
 
+#rezepte-schwierigkeit{
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  background-color: #ebdd8e;
+  bottom: 45px;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 20px;
+  font-family: Nunito;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#logohead{
+  display: none;
+}
+#bewertung{
+  position: absolute;
+}
+
+#rezepte-schwierigkeit-h{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+#rezepte-schwierigkeit-blur{
+  opacity: 0.2;
+}
+#bewertung{
+  position: relative;
+}
+#rezepte-schwierigkeit h3{
+  font-size: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 5px;
+}
+
 
 
 .loader {
@@ -923,6 +962,7 @@
 
 @media(min-width:800px) {
 
+
   #search_icon_resp{
     display: none;
   }
@@ -933,7 +973,7 @@
 
   body::-webkit-scrollbar {
     width: 10px;
-    background-color: black;
+    background-color: #141414;
     border-radius: 5px;
     cursor: pointer;
     z-index: 10000;
@@ -944,7 +984,7 @@
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(48, 48, 48);
     border-radius: 5px;
     cursor: pointer;
     z-index: 10000;
@@ -957,7 +997,7 @@
   }
 
   body::-webkit-scrollbar-track {
-    background-color: black;
+    background-color: #141414;
     border-radius: 5px;
     cursor: pointer;
     z-index: 10000;
@@ -969,6 +1009,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     user-select: none;
+    background-color: #141414;
   }
 
   nav {
@@ -1061,46 +1102,58 @@
   }
 
   #startseite-extraplatz-unten {
-    background-color: #ebdd8e;
+    background-color: #141414;
     height: 250px;
-    width: 110%;
+    width: 105%;
     position: relative;
-    margin-left: -5%;
-    filter: drop-shadow(-5px -5px 5px #000000);
+    margin-top: -30px;
+    margin-left: -10px;
+    border-bottom: #ebdd8e 2px solid;
   }
 
   #startseite-rezept {
     background-image: url("pics/heidelbeer_muffins.jpg");
     background-size: cover;
     background-position: center;
-    left: 0;
     height: 500px;
-    width: 100%;
-    position: absolute;
-    border-bottom: #ebdd8e 3px solid;
-    position: relative;
-    top: 100px;
-  }
-
-  #startseite-rezept {
-    position: relative;
-    top: 50px;
+    width: 104%;
+    margin-top: 0px;
     font-family: Nunito;
     user-select: none;
+    position: relative;
+    margin-left: -10px;
+
   }
+
+  #startseite-extraplatz-content{
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+  }
+
+
 
   #startseite-h2 {
     font-family: Nunito;
     position: relative;
     text-align: center;
+    color: white;
 
   }
+  #startseite-button-groß {
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 400px;
 
+  }
   #startseite-button-groß-button {
     align-items: center;
     position: absolute;
     left: 50%;
-    top: -100px;
     transform: translate(-50%);
     background-color: #141414;
     border: 5px solid #141414;
@@ -1119,12 +1172,44 @@
     color: #141414;
     border: #ebdd8e;
     width: 250px;
-    border-radius: 0;
+    border-radius: 10px;
     transition: 0.5s;
     filter: drop-shadow(3px 3px 10px black);
+    cursor: pointer;
+
+  }
+  #muffin_herausforderung {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+  }
+
+  #herausforderung_button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    background-color: #ebdd8e;
+    border: 5px solid #ebdd8e;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    color: #141414;
+    transition: width 0.5s;
 
   }
 
+  #herausforderung_button:hover {
+    background-color: #ebdd8e;
+    color: #141414;
+    border: #ebdd8e;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: drop-shadow(3px 3px 10px black);
+    cursor: pointer;
+  }
   #logo_resp {
     display: none;
   }
@@ -1138,7 +1223,7 @@
     background-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(39, 39, 39, 0) 100%);
     border-radius: 0px 0px 20px 0px;
     padding-right: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 160px;
     width: 100%;
   }
 
@@ -1166,17 +1251,8 @@
   }
 
 
-  #startseite-button-groß-button:hover {
-    cursor: pointer;
-  }
 
-  #startseite-button-groß {
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    position: absolute;
 
-  }
 
   #footer {
     z-index: 999;
@@ -1279,6 +1355,7 @@
     top: 430px;
     color: #ebdd8e;
     transition: width 0.5s, left 0.5s;
+    display: none;
 
   }
 
@@ -1311,37 +1388,7 @@
 
   }
 
-  #muffin_herausforderung {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-  }
 
-  #herausforderung_button {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 200px;
-    background-color: #141414;
-    border: 5px solid #141414;
-    border-radius: 30px;
-    width: 200px;
-    height: 30px;
-    color: #ebdd8e;
-    transition: width 0.5s;
-
-  }
-
-  #herausforderung_button:hover {
-    background-color: #ebdd8e;
-    color: #141414;
-    border: #ebdd8e;
-    width: 250px;
-    border-radius: 0;
-    transition: 0.5s;
-    filter: drop-shadow(3px 3px 10px black);
-    cursor: pointer;
-  }
 
 
   #r001-rezeptansicht {
@@ -1353,6 +1400,7 @@
     top: 80px;
     left: 20px;
     border-radius: 20px;
+    backdrop-filter: blur(4px);
 
   }
 
@@ -1423,7 +1471,7 @@
   #r001-image{
     background-image: url('pics/ribisel_muffins.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 50% 0%;
   }
 
   #rezeptansicht-small{
@@ -1436,6 +1484,7 @@
     right: 0;
     border-radius: 0px 0px 0px 20px;
     font-family: Nunito;
+    backdrop-filter: blur(4px);
     
 
   }
@@ -1607,11 +1656,10 @@
     width: 200px;
     height: 50px;
     color: #000000;
-    transition: width 0.5s, left 0.5s;
+    transition: 0.5s, border 0s;
   }
 
   #email_span_btn:hover {
-    transition: all 1s;
     cursor: pointer;
     background-color: #ebdd8e;
     color: #141414;
@@ -1638,9 +1686,36 @@
     top: 90px;
     left: 50%;
     transform: translate(-50%);
-    background-color: #000000;
     color: white;
     font-family: Nunito;
+  }
+
+  #rezepte-schwierigkeit{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    background-color: #ebdd8e;
+    bottom: 100px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Nunito;
+    left: 100px;
+  }
+
+  #rezepte-schwierigkeit-h{
+    font-size: 20px;
+  }
+
+  #rezepte-schwierigkeit-blur{
+    opacity: 0.2;
+  }
+
+  #rezepte-schwierigkeit h3{
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5px;
   }
 
   #rezepte-con-itm1{
