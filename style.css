@@ -70,7 +70,7 @@
   }
 
   #startseite-rezept {
-    background-image: url("heidelbeer_muffins.jpg");
+    background-image: url("pics/heidelbeer_muffins.jpg");
     background-size: cover;
     background-position: center;
     left: 0;
@@ -367,102 +367,7 @@
 
   }
 
-  .loader {
-    position: fixed;
-    z-index: 100000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    transform: rotate(45deg);
-  }
-
-  .loader::before {
-    content: '';
-    box-sizing: border-box;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 0;
-    top: -24px;
-    animation: animloader 4s ease infinite;
-  }
-
-  .loader::after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 24px;
-    height: 24px;
-    background: #ebdd8e;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    animation: animloader2 2s ease infinite;
-  }
-
-  @keyframes animloader {
-    0% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
-    }
-
-    12% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
-    }
-
-    25% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
-    }
-
-    37% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px rgba(255, 255, 255, 0);
-    }
-
-    50% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
-    }
-
-    62% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
-    }
-
-    75% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px #ebdd8e, 0px 48px #ebdd8e;
-    }
-
-    87% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px #ebdd8e;
-    }
-
-    100% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
-    }
-  }
-
-  @keyframes animloader2 {
-    0% {
-      transform: translate(0, 0) rotateX(0) rotateY(0);
-    }
-
-    25% {
-      transform: translate(100%, 0) rotateX(0) rotateY(180deg);
-    }
-
-    50% {
-      transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
-    }
-
-    75% {
-      transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
-    }
-
-    100% {
-      transform: translate(0, 0) rotateX(0) rotateY(360deg);
-    }
-  }
-
+ 
 
   .space1 {
     position: relative;
@@ -666,7 +571,7 @@
   }
 
   #r001-image{
-    background-image: url('ribisel_muffins.jpg');
+    background-image: url('pics/ribisel_muffins.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0%;
   }
@@ -681,10 +586,25 @@
     transform: translate(-50%);
     border-radius: 20px;
     font-family: Nunito;
-    overflow-y: scroll;
     top: 70px;
+    display: flexbox;
     
 
+  }
+
+  #rezeptansicht-small-div{
+    color: black;
+    z-index: 999;
+    position: absolute;
+    left: 10px;
+    font-family: Nunito;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+    height: 65%;
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 20px;
   }
 
   #rezeptansicht-small ol{
@@ -739,7 +659,7 @@
     z-index: 10000;
   }
 
-  #rezeptansicht-small::-webkit-scrollbar {
+  #rezeptansicht-small-div::-webkit-scrollbar {
     width: 10px;
     background-color: #dadada00;
     border-radius: 5px;
@@ -749,7 +669,7 @@
   }
 
 
-  #rezeptansicht-small::-webkit-scrollbar-thumb {
+  #rezeptansicht-small-div::-webkit-scrollbar-thumb {
     background-color: rgb(94, 94, 94);
     border-radius: 5px;
     cursor: pointer;
@@ -757,14 +677,14 @@
 
   }
 
-  #rezeptansicht-small::-webkit-scrollbar-thumb:hover {
+  #rezeptansicht-small-div::-webkit-scrollbar-thumb:hover {
     background-color: #ebdd8e;
     cursor: pointer;
     z-index: 10000;
 
   }
 
-  #rezeptansicht-small::-webkit-scrollbar-track {
+  #rezeptansicht-small-div::-webkit-scrollbar-track {
     background-color: #dadada00;
     border-radius: 5px;
     cursor: pointer;
@@ -838,7 +758,7 @@
   margin-right: 10px;
   border-radius: 30px;
   border: #ebdd8e 2px solid;
-  background-image: url("schoko_muffins.jpg");
+  background-image: url("pics/schoko_muffins.jpg");
   background-size: cover;
   margin-bottom: 20px;
   left: 50%;
@@ -860,7 +780,7 @@
   background-color: #141414;
   border-radius: 30px;
   border: #ebdd8e 2px solid;
-  background-image: url("heidelbeer_muffins.jpg");
+  background-image: url("pics/heidelbeer_muffins.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 20px;
@@ -882,7 +802,7 @@
   background-color: #141414;
   border-radius: 30px;
   border: #ebdd8e 2px solid;
-  background-image: url("ribisel_muffins.jpg");
+  background-image: url("pics/ribisel_muffins.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 20px;
@@ -904,7 +824,7 @@
   background-color: #141414;
   border-radius: 30px;
   border: #ebdd8e 2px solid;
-  background-image: url("zitronen_muffins.jpg");
+  background-image: url("pics/zitronen_muffins.jpg");
   background-position: center;
   background-size: cover;
   left: 50%;
@@ -954,6 +874,34 @@
   width: 120px;
   border-radius: 3px;
 }
+
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #ebdd8e;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 999999999999;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
 
 }
 
@@ -1122,7 +1070,7 @@
   }
 
   #startseite-rezept {
-    background-image: url("heidelbeer_muffins.jpg");
+    background-image: url("pics/heidelbeer_muffins.jpg");
     background-size: cover;
     background-position: center;
     left: 0;
@@ -1473,7 +1421,7 @@
   }
 
   #r001-image{
-    background-image: url('ribisel_muffins.jpg');
+    background-image: url('pics/ribisel_muffins.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1501,7 +1449,7 @@
     font-family: Nunito;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 90%;
+    width: 80%;
     height: 70%;
     display: inline-block;
     margin-top: 10px;
@@ -1705,7 +1653,7 @@
     margin-right: 10px;
     border-radius: 30px;
     border: #ebdd8e 2px solid;
-    background-image: url("schoko_muffins.jpg");
+    background-image: url("pics/schoko_muffins.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -1727,7 +1675,7 @@
     background-color: #141414;
     border-radius: 30px;
     border: #ebdd8e 2px solid;
-    background-image: url("heidelbeer_muffins.jpg");
+    background-image: url("pics/heidelbeer_muffins.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -1748,7 +1696,7 @@
     left: 0;
     border-radius: 30px;
     border: #ebdd8e 2px solid;
-    background-image: url("ribisel_muffins.jpg");
+    background-image: url("pics/ribisel_muffins.jpg");
     background-position: center;
     background-position: center;
     background-size: cover;
@@ -1770,7 +1718,7 @@
     right: 0;
     border-radius: 30px;
     border: #ebdd8e 2px solid;
-    background-image: url("zitronen_muffins.jpg");
+    background-image: url("pics/zitronen_muffins.jpg");
     background-position: center;
     background-position: center;
     background-size: cover;
@@ -1837,99 +1785,83 @@
 
   /*DON'T TOUCH*/
   .loader {
-    position: fixed;
-    z-index: 100000;
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
     top: 50%;
     left: 50%;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 999999999999;
   }
-
-  .loader::before {
-    content: '';
-    box-sizing: border-box;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 0;
-    top: -24px;
-    animation: animloader 4s ease infinite;
-  }
-
-  .loader::after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 24px;
-    height: 24px;
-    background: #ebdd8e;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    animation: animloader2 2s ease infinite;
-  }
-
-  @keyframes animloader {
-    0% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+    .loader:before,
+    .loader:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotateX(70deg);
+      animation: 1s spin linear infinite;
+    }
+    .loader:after {
+      color: #ebdd8e;
+      transform: rotateY(70deg);
+      animation-delay: .4s;
     }
 
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotateccw {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0%,
+    100% {
+      box-shadow: .2em 0px 0 0px currentcolor;
+    }
     12% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+      box-shadow: .2em .2em 0 0 currentcolor;
     }
-
     25% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+      box-shadow: 0 .2em 0 0px currentcolor;
     }
-
     37% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px rgba(255, 255, 255, 0);
+      box-shadow: -.2em .2em 0 0 currentcolor;
     }
-
     50% {
-      box-shadow: 0 24px #ebdd8e, 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+      box-shadow: -.2em 0 0 0 currentcolor;
     }
-
     62% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px #ebdd8e, 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+      box-shadow: -.2em -.2em 0 0 currentcolor;
     }
-
     75% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px #ebdd8e, 0px 48px #ebdd8e;
+      box-shadow: 0px -.2em 0 0 currentcolor;
     }
-
     87% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px #ebdd8e;
-    }
-
-    100% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+      box-shadow: .2em -.2em 0 0 currentcolor;
     }
   }
 
-  @keyframes animloader2 {
-    0% {
-      transform: translate(0, 0) rotateX(0) rotateY(0);
-    }
-
-    25% {
-      transform: translate(100%, 0) rotateX(0) rotateY(180deg);
-    }
-
-    50% {
-      transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
-    }
-
-    75% {
-      transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
-    }
-
-    100% {
-      transform: translate(0, 0) rotateX(0) rotateY(360deg);
-    }
-  }
 
 
 
