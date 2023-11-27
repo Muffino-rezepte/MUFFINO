@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="r001-image">
+    <div id="resp-content">
+        <header>
+            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+                <nav id="nav_nav">
+    
+                <ul>
+                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                    <li>Tipps & Tricks</li>
+                    <li>Unsere Empfehlungen</li>
+                    <li>Spenden</li>
+                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+                </ul>
+        </nav>
+    </header>
+    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+        <div id="burger_dropdown"></div>
+        <div id="burger_lines">
+            <div id="burger_line1"></div>
+            <div id="burger_line2"></div>
+            <div id="burger_line3"></div>
+            <div id="burger_link" onclick="burger_openmenu()"></div>
+    
+        </div>
+        <div id="burger_menu">
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+                <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+                <li class="burger_li" id="burger_itm4">Spenden</li>  
+    
+            </ul>
+        </div>
+
+
+
+    <!--Inhalt-->
+    <div id="r001-rezeptansicht">
+        <img src="pics/bigger.png" alt="vergrößerung" id="bigger" onclick="textsizebig()">
+        <img src="pics/smaller.png" alt="vergrößerung" id="smaller" onclick="textsizesmall()">
+        <h1 id="r001-h1">Trendgebäck Cruffin</h1>
+        <div id="r001-anleitung">
+
+            <span>1) Für den Teig mischst du zunächst Mehl, Eier, Butter, Zucker und Salz. Rühre dann die Hefe in die lauwarme Milch ein und gib die Mischung zum Mehlmix.  </span><br>
+            <span>2) Verknete nun alles so lange zu einem Teig, bis er nicht mehr klebt. Lass ihn anschließend 1 Stunde zugedeckt an einem warmen Ort gehen. </span> <br>
+            <span>3) Für die Schokofüllung gibst du nun Kakao, Zucker, Butter und Mehl in einen Topf. Während des Erhitzens raspelst du z.B. mit einer Käsereibe die Schokolade 
+                        darüber und gibst zuletzt eine Prise Salz dazu. Lass die Zutaten schmelzen und verrühre alles mit einem Schneebesen. Sobald die Masse glatt und dickflüssig ist, 
+                        füllst du sie in eine Schüssel um und lässt sie erkalten. </span><br>
+            <span>4) Walze den Teig auf einer bemehlten Arbeitsfläche zu einer runden Form aus. Lass ihn nicht zu dünn werden, damit er beim Weiterverarbeiten nicht reißt. 
+                        Verteile nun die Kakaomasse gleichmäßig auf dem ganzen Teig und spare dabei die Ränder aus.  </span><br>
+            <span>5) Anschließend klappst du zwei gegenüberliegende Seiten zur Mitte hin ein, damit sie sich dort berühren. Klappe nun eine auf die andere Hälfte, sodass du 
+                        eine Art breite Teigstange vor dir hast. Walze diese nochmal aus, falte sie wieder längs und wiederhole die 2 Schritte nochmal. Als Letztes walzt du 
+                        den Teig noch einmal aus und klappst längs beide gegenüberliegenden Seiten zur Mitte hin ein. Dann rollst du das Teigstück zu einer Rolle, die überall 
+                        etwa denselben Durchmesser besitzen sollte. Abschließend teilst du sie in etwa 3 cm lange Stücke. </span><br>
+            <span>6) Setze die Stücke senkrecht in die Vertiefungen von gefetteten Muffinformen und backe die Cruffins dann für 25 Minuten bei 170 °C im Umluftmodus. </span>
+            
+        </div>
+    </div>
+
+    <div id="rezeptansicht-small">
+        <h2>Zutaten</h2>
+        <div id="rezeptansicht-small-div">
+                 <span>Für den Teig</span><br>
+                <span>600 g - Mehl</span><br>
+                <span>2 Stk - Eier</span><br>
+                <span>100 g - weiche Butter</span><br>
+                <span>90 g - Zucker</span><br>
+                <span>1/2 TL - Salz</span><br>
+                <span>250 ml - Milch</span><br>
+                <span>20 g - Trockenhefe</span><br>
+                <span>Für die Schokofüllung</span><br>
+                <span>40 g - Kakao</span><br>
+                <span>110 g - Zucker</span><br>
+                <span>60 g - Mehl</span><br>
+                <span>50 g - Butter</span><br>
+                <span>150 ml - Milch</span><br>
+                <span>100 g - Zartbitterschokolade</span><br>
+                <span>0,04 g - Salz</span><br>
+        </div>
+
+    </div>
+
+    <div id="rezepte-schwierigkeit">
+        <span id="rezepte-schwierigkeit-h">Schwierigkeit:</span>
+    <span id="bewertung"><span>★★★★</span><span id="rezepte-schwierigkeit-blur">★</span></span>
+    </div>
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
