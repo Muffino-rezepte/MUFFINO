@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="r001-image">
+    <div id="resp-content">
+        <header>
+            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+                <nav id="nav_nav">
+    
+                <ul>
+                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                    <li>Tipps & Tricks</li>
+                    <li>Unsere Empfehlungen</li>
+                    <li>Spenden</li>
+                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+                </ul>
+        </nav>
+    </header>
+    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+        <div id="burger_dropdown"></div>
+        <div id="burger_lines">
+            <div id="burger_line1"></div>
+            <div id="burger_line2"></div>
+            <div id="burger_line3"></div>
+            <div id="burger_link" onclick="burger_openmenu()"></div>
+    
+        </div>
+        <div id="burger_menu">
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+                <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+                <li class="burger_li" id="burger_itm4">Spenden</li>  
+    
+            </ul>
+        </div>
+
+
+
+    <!--Inhalt-->
+    <div id="r001-rezeptansicht">
+        <img src="pics/bigger.png" alt="vergrößerung" id="bigger" onclick="textsizebig()">
+        <img src="pics/smaller.png" alt="vergrößerung" id="smaller" onclick="textsizesmall()">
+        <h1 id="r001-h1">Ribiselmuffin</h1>
+        <div id="r001-anleitung">
+
+            <span>1) Schlage zuerst die Eier schaumig auf und füge dann alle weiteren Zutaten für den Teig hinzu. </span><br>
+            <span>2) Lege eine Muffinform mit passend zurechtgeschnittenem Backpapier aus und gib je einen Esslöffel Teig hinein. Nun gibst du einen kleinen Klecks Marmelade auf den Teig und bedeckst diese mit einem weiteren Esslöffel Teig. </span> <br>
+            <span>3) Nun werden die Muffins bei 160 °C für 30 Minuten gebacken. Nach dem Backen holst du die Muffins aus der Blechform und lässt sie auskühlen. </span><br>
+            <span>4) Um die Creme zuzubereiten, gib Butter, Frischkäse und Puderzucker in eine große Schüssel und rühre die Zutaten, bis sie eine gleichmäßige Masse bilden. </span><br>
+            <span>5) Nun teile die Creme in zwei gleiche Portionen. Zu einer Hälfte fügst du Kokosraspel, zur anderen Brombeermarmelade sowie etwas Lebensmittelfarbe. </span><br>
+            <span>6) Fülle die Creme nun in Spritzbeutel, die Brombeercreme aber in einen Spritzbeutel mit Sterntülle. </span>
+            <span>7) Zuerst gibst du einen dicken Klecks Kokoscreme als Basis auf die Muffins. Darauf setzt du einen dekorativen Klecks Brombeercreme. Das im wahrsten Sinne des Wortes krönende Finale bildet eine frische Brombeere auf der Spitze. </span>
+           
+        </div>
+    </div>
+
+    <div id="rezeptansicht-small">
+        <h2>Zutaten</h2>
+        <div id="rezeptansicht-small-div">
+                <span>Für den Teig</span>
+                <span>2 Stk - Ei</span><br>
+                <span>100 g - Mehl</span><br>
+                <span>80 g - Zucker</span><br>
+                <span>35 g - Butter</span><br>
+                <span>1 TL - Backpulver</span><br>
+                <span>1 TL - Vanilleextrakt</span><br>
+                <span>250g - Heidelbeeren</span><br>
+                <span>Für die Füllung</span>
+                <span>2 EL - Brombeermarmelade</span><br>
+                <span>Für die Creme</span><br>
+                <span>55 g - weiche Butter</span><br>
+                <span>120 g - Frischkäse</span><br>
+                <span>180 g - Puderzucker</span><br>
+                <span>2 EL - Kokosraspeln</span><br>
+                <span>1 EL - Brombeermarmelade</span><br>
+                <span>n. B. - violette Lebensmittelfarbe</span><br>
+                <span>6 Stk - frische Brombeeren</span><br>
+                <span>50 g - Mandeln(gehobelt)</span><br>
+        
+        </div>
+
+    </div>
+
+    <div id="rezepte-schwierigkeit">
+        <span id="rezepte-schwierigkeit-h">Schwierigkeit:</span>
+    <span id="bewertung"><span>★★★</span><span id="rezepte-schwierigkeit-blur">★★</span></span>
+    </div>
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
