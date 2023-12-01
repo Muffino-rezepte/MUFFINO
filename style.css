@@ -580,6 +580,41 @@
     background-repeat: no-repeat;
     background-position: 50% 0%;
   }
+  #r003-image{
+    background-image: url('pics/zitronen_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r004-image{
+    background-image: url('pics/heidelbeer_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r005-image{
+    background-image: url('pics/schoko_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r006-image{
+    background-image: url('pics/Brombeer_kokos_muffins.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r007-image{
+    background-image: url('pics/Bienenstichmuffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r008-image{
+    background-image: url('pics/cruffin.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r009-image{
+    background-image: url('pics/giotto-cupcakes©Janneke_Duijnmaijer.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
 
   #rezeptansicht-small{
     position: fixed;
@@ -1476,6 +1511,46 @@
 
   #r001-image{
     background-image: url('pics/ribisel_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r002-image{
+    background-image: url('pics/normalermuffin.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r003-image{
+    background-image: url('pics/zitronen_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r004-image{
+    background-image: url('pics/heidelbeer_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r005-image{
+    background-image: url('pics/schoko_muffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r006-image{
+    background-image: url('pics/Brombeer_kokos_muffins.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r007-image{
+    background-image: url('pics/Bienenstichmuffins.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r008-image{
+    background-image: url('pics/cruffin.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  #r009-image{
+    background-image: url('pics/giotto-cupcakes©Janneke_Duijnmaijer.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0%;
   }
