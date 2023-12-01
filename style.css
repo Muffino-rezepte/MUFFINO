@@ -574,6 +574,12 @@
     background-repeat: no-repeat;
     background-position: 50% 0%;
   }
+  
+  #r002-image{
+    background-image: url('pics/normalermuffin.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
 
   #rezeptansicht-small{
     position: fixed;
