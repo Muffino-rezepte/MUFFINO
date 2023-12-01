@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="r001-image">
+    <div id="resp-content">
+        <header>
+            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+                <nav id="nav_nav">
+    
+                <ul>
+                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                    <li>Tipps & Tricks</li>
+                    <li>Unsere Empfehlungen</li>
+                    <li>Spenden</li>
+                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+                </ul>
+        </nav>
+    </header>
+    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+        <div id="burger_dropdown"></div>
+        <div id="burger_lines">
+            <div id="burger_line1"></div>
+            <div id="burger_line2"></div>
+            <div id="burger_line3"></div>
+            <div id="burger_link" onclick="burger_openmenu()"></div>
+    
+        </div>
+        <div id="burger_menu"> 
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+                <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+                <li class="burger_li" id="burger_itm4">Spenden</li>  
+    
+            </ul>
+        </div>
+
+
+
+    <!--Inhalt-->
+    <div id="r001-rezeptansicht">
+        <img src="pics/bigger.png" alt="vergrößerung" id="bigger" onclick="textsizebig()">
+        <img src="pics/smaller.png" alt="vergrößerung" id="smaller" onclick="textsizesmall()">
+        <h1 id="r001-h1">Bienenstich-Cupcakes</h1>
+        <div id="r001-anleitung">
+
+            <span>1) Mehl, Zucker und die übrigen trockenen Zutaten abwiegen und in eine Schüssel geben. Durch ein Sieb geben um eine sehr fein-pulvrige Mischung zu bekommen. </span><br>
+            <span>2) In einem Messbecher Pflanzenmilch, -sahne und Öl abmessen. Mit Apfelessig versetzen. </span> <br>
+            <span>3) Die Zutaten solange verquirlen, bis sie fast eine stabile Emulsion ergeben (also kaum noch Öl obenauf schwimmt). In die Mehlmischung geben und mit einem Schneebesen zügig zu einem glatten Teig verrühren.</span><br>
+            <span>4) Die Förmchen mit Muffin-Papier auskleiden und gleichmäßig je zu ⅔ befüllen. Sofort für rund 25 Minuten backen. Herausnehmen und abkühlen lassen.</span><br>
+            <span>5) Vanillezucker, Sahnefest und Schlagcreme in eine Rührschüssel geben. Färbendes Mittel und Vanillepaste hinzufügen und langsam verquirlen, sodass die Zutaten sich vermengen können ohne aufzuschlagen.</span><br>
+            <span>6) Anschließend auf Power-Stufe alles luftig aufschlagen bis eine stabile, lockere Masse entstanden ist. Ggf. nachfärben. </span> <br>
+            <span>7) Nun die Creme mit San-apart nach Belieben zusätzlich festigen (z. B. wenn die Creme längere Zeit stabil sein muss). Bis zur Verwendung kühlen.</span><br>
+            <span>8) Die gehobelten Mandeln in einer Teflon-Pfanne ohne fett vorsichtig anrösten. Bei der gewünschten Bräune vom Herd ziehen und abkühlen lassen.</span><br>
+            <span>9) Sind alle Bestandteile (Muffins, Creme und Mandeln) kalt, so können sie zu kleinen Cupcakes verbunden werden. Dazu die Creme in einen Spritzbeutel mit großer Tülle geben. </span><br>
+            <span>10) Die Cupcakes gleichmäßig mit Creme versehen. </span> <br>
+            <span>11) Anschließend alle Cupcakes mit einigen Mandelsplittern garnieren und nach Möglichkeit bis zum Servieren kaltstellen. Fertig. Guten Appetit!</span><br>
+            
+        </div>
+    </div>
+
+    <div id="rezeptansicht-small">
+        <h2>Zutaten</h2>
+        <div id="rezeptansicht-small-div">
+                <span>Trockene Zutaten für den Teig</span><br>
+                <span>225 g - Weizenmehl</span><br>
+                <span>100 g - Zucker</span><br>
+                <span>25 g - Vanillezucker</span><br>
+                <span>2 TL - Weinsteinbackpulver</span><br>
+                <span>2 TL - Natron</span><br>
+                <span>Feuchte Zutaten für den Teig</span><br>
+                <span>200 ml - Pflanzenmilch</span><br>
+                <span>100 ml - Raps- o. Sonnenblumenöl</span><br>
+                <span>50 ml - Pflanzensahne</span><br>
+                <span>2 EL - Apfelessig o. Zitronensaft</span><br>
+                <span>Topping (optional)</span><br>
+                <span>300 ml - Schlagcreme</span><br>
+                <span>15 g - Vanillezucker</span><br>
+                <span>1 TL - Vanillepaste</span><br>
+                <span>1 Pk - Sahnefest</span><br>
+                <span>n. B. - San-apart</span><br>
+                <span>50 g - Mandeln(gehobelt)</span><br>
+        </div>
+
+    </div>
+
+    <div id="rezepte-schwierigkeit">
+        <span id="rezepte-schwierigkeit-h">Schwierigkeit:</span>
+    <span id="bewertung"><span>★★★★</span><span id="rezepte-schwierigkeit-blur">★</span></span>
+    </div>
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
