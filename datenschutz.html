@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Tipps & Tricks</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+
+<!--SEITE FERTIG - DON'T TOUCH-->
+<body>
+    <header>
+        <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+        <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+            <nav id="nav_nav">
+
+            <ul>
+                <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                <a href="tipps.html" class="link" id="active"><li>Tipps & Tricks</li></a>
+                <a href="empfehlungen.html" class="link"><li>Unsere Empfehlungen</li></a>
+                <a href="https://www.buymeacoffee.com/muffino" class="link" target="_blank"><li>Spenden 🧁</li></a>
+                <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+            </ul>
+    </nav>
+</header>
+<div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+<a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+    <div id="burger_dropdown"></div>
+    <div id="burger_lines">
+        <div id="burger_line1"></div>
+        <div id="burger_line2"></div>
+        <div id="burger_line3"></div>
+        <div id="burger_link" onclick="burger_openmenu()"></div>
+
+    </div>
+        <div id="burger_menu">
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <li class="burger_li" id="burger_itm2">Tipps & Tricks</li>
+                <li class="burger_li" id="burger_itm3">Unsere Empfehlungen</li>
+                <li class="burger_li" id="burger_itm4">Spenden</li>  
+    
+            </ul>
+        </div>
+
+
+
+    <div id="tipps_inhalt">
+            <h2>Tipps und Tricks</h2>
+            <div id="tipps_liste">
+                    <span></span><br>
+                    <span>1) Dinkelmehl kann auch durch Weizenmehl ersetzt bzw. beides gemischt verwendet werden.</span><br>
+                    <span>2) Es können immer ein paar Schokostücke und geriebene Nüsse unter den Teig gemischt werden. </span><br>
+                    <span>3) Heidelbeeren sind ab Mitte Juli bis Ende August in den heimischen Wäldern zu finden.</span><br>
+                    <span>4) Nach Wunsch kann man Muffins immer mit Schokosauce übergießen und mit Schlagobers servieren.</span><br>
+                    <span>5) Kinder freuen sich sehr über eine zusätzliche Schokoladeglasur mit bunten Streuseln.</span><br>
+                    <span>6) Anstelle von Vanillezucker, kann auch das Mark einer echten Vanilleschote verwendet werden.</span><br>
+                    <span>7) Bei Beeren-Muffins kann man statt den Beeren die im Rezept vorgegeben sind auch andere nehmen.</span><br>
+                    <span>8) Muffins gehören immer ins vorgeheizte Backrohr geschoben! Am besten werden die Muffins auf der 2. Schiene von unten gebacken.</span><br>
+                    <span>9) Um zu prüfen, ob die Muffins fertig gebacken sind reicht ein Holzstäbchen. Das Holzstäbchen in einen Muffin stecken und herausziehen – klebt noch flüssiger Teig am Holzstäbchen, brauchen die Muffins noch ein paar Minuten. Die Muffins sind erst fertig, wenn kein Teig am Holzstäbchen kleben bleibt.</span><br>
+                    <span>10)Muffins lassen sich auch hervorragend einfrieren. Zum Auftauen entweder ein paar Stunden bei Raumtemperatur stehen lassen (am besten über Nacht und in der Früh zum Frühstück verspeisen) oder im Backrohr beziehungsweise der Mikrowelle auftauen.</span><br>
+            </div>
+
+
+
+
+
+
+<footer id="footer">
+    <div id="footer_div">
+        <ul id="footer_ul">
+            <li class="footer_li">Impressum</li>
+            <li class="footer_li">Kontakt</li>
+            <li class="footer_li">Datenschutz</li>
+            <li class="footer_li">Über uns</li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
