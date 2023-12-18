@@ -3,6 +3,4 @@ Muffino bietet jedem Besucher wunderbare variationen an selbstgetestete Muffinre
 
 
 AUFGABEN JU:
- - projekttagebuch machen dings protokoll
  - unterseite legal dings
- - bilder vergößern ändern
