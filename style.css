@@ -505,7 +505,7 @@
     width: calc(100% - 10%);
     height: calc(100% - 50%);
     position: absolute;
-    background-color: #dadadaa9;
+    background-color: #dadadae1;
     z-index: 999;
     top: calc(100% - 60%);
     left: 50%;
@@ -520,6 +520,7 @@
     margin-left: 10px;
     font-size: 30px;
     margin-top: 10px;
+    width: 200px;
   }
 
   #r001-ul {
@@ -632,7 +633,7 @@
     bottom: 50px;
     width: calc(100% - 10%);
     height: calc(100% - 72%);
-    background-color: #dadadaa9;
+    background-color: #dadadae1;
     left: 50%;
     transform: translate(-50%);
     border-radius: 20px;
@@ -1510,7 +1511,7 @@
     width: calc(100% - 40%);
     height: calc(100% - 40%);
     position: absolute;
-    background-color: #dadadad4;
+    background-color: #dadadae1;
     z-index: 999;
     top: 80px;
     left: 20px;
@@ -1524,6 +1525,7 @@
     margin-left: 10px;
     font-size: 60px;
     margin-top: 0;
+    width: 400px;
   }
 
   #r001-ul {
@@ -1653,7 +1655,7 @@
     padding-top: 60px;
     width: calc(100% - 75%);
     height: 400px;
-    background-color: #dadadad4;
+    background-color: #dadadae1;
     right: 0;
     border-radius: 0px 0px 0px 20px;
     font-family: Nunito;
