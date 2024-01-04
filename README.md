@@ -9,3 +9,4 @@ TO DO:
  - KONTAKT
  - Über uns
  - die oben genannten unterseiten auf allen seiten verlinken das man drauf kann uwu
+ - bookmarks
