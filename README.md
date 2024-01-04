@@ -2,6 +2,10 @@
 Muffino bietet jedem Besucher wunderbare variationen an selbstgetestete Muffinrezepten
 
 
-AUFGABEN JU:
- - unterseite legal dings
- - auf test seite üverschriften fett machen <b></b>
+TO DO:
+ - unterseite legal dings DATENSCHUTZ (fast fertig -JU)
+ - Suchdings
+ - IMPRESSUM
+ - KONTAKT
+ - Über uns
+ - die oben genannten unterseiten auf allen seiten verlinken das man drauf kann uwu
