@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Impressum</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="tippsimage">
+    <div id="resp-content">
+        <header>
+            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+                <nav id="nav_nav">
+    
+                <ul>
+                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                    <a href="tipps.html" class="link"><li>Tipps & Tricks</li></a>
+                    <a href="r009.html" class="link"><li>Persönliche Empfehlung</li></a>
+                    <a href="https://www.buymeacoffee.com/muffino" class="link" target="_blank"><li>Spenden 🧁</li></a>
+                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+                </ul>
+        </nav>
+    </header>
+    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+        <div id="burger_dropdown"></div>
+        <div id="burger_lines">
+            <div id="burger_line1"></div>
+            <div id="burger_line2"></div>
+            <div id="burger_line3"></div>
+            <div id="burger_link" onclick="burger_openmenu()"></div>
+    
+        </div>
+        <div id="burger_menu">
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <a href="tipps.html" class="link"><li class="burger_li" id="burger_itm2">Tipps & Tricks</li></a>
+                <a href="r009.html" class="link"><li class="burger_li" id="burger_itm3">Persönliche Empfehlung</li></a>
+                <a href="https://www.buymeacoffee.com/muffino" class="link"><li class="burger_li" id="burger_itm4">Spenden 🧁</li></a>
+        
+            </ul>
+        </div>
+        <div id="tipps_inhalt">
+            <div id="tipps_inhalt-texts">
+                <div id="impress">
+            <div><h1>Impressum</h1></div>
+            <h2>Verantwortliche</h2>
+            <span>Name:</span><br>
+            <span>Wohnort:</span><br><br>
+            <span>Name:</span><br>
+            <span>Wohnort:</span>
+            <br>
+            <h2>Kontakt</h2>
+            <span>E-Mail:</span><br>
+            <span>Tel:</span><br>
+            <span>WWW:</span>
+            <br>
+            <h2>Haftungsnachweis</h2>
+            <span>Die Informationen auf dieser Website dienen nur zu Informationenszwecken und repräsentieren kein formelles Unternehmen.</span>
+            <span> Muffino hat keine kommerziellen Absichten.</span><br>
+            <span>Muffino verwendet frei verfügbare Rezepte und legt diese nur zur Anschauung dar.</span><br>
+            <span>Durch die verlinkte Seite unter "Spenden" kann Muffino ein ausgewählter Betrag gespendet werden. Der Nutzer erhält dadurch keinerlei Vorteile.</span>
+            <br><h2>Dritte</h2>
+            <span>Gehostet wird diese Website über github.com. Alle damit einhergehenden Ausfälle und Fehlfunktionen liegen daher nicht in unserer Macht.</span><br>
+            <h2>Verlinkte Webseiten:</h2>
+            <span>1</span><br>
+            <span>2</span>
+            <span></span><br>
+            <span></span><br>
+            <span></span><br>
+            <span></span><br>
+        </div>
+            </div>
+        </div>
+            
+    
+
+
+<!--DON'T TOUCH-->
+<footer id="footer">
+    <div id="footer_div">
+            <a href="impressum.html"><span>Impressum</span></a>
+            <a href="datenschutz.html"><span>Datenschutz</span></a>
+            <a href="impressum.html"><span>Kontakt</span></a>
+
+        </div>
+
+</footer>
+
+</div>
+<div id="blackbox"></div>
+<span class="loader"></span>
+
+
+    
+
+   
+
+</body>
+<script src="scripts.js"></script>
+</html>
