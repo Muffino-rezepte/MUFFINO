@@ -1,150 +1,66 @@
-Skip to content
-Muffino-rezepte
-/
-MUFFINO
+<!DOCTYPE html>
+<!--Burger Button verschiebt sich!-->
+<!--Head Logo ganz ausblenden damit es nicht mit Buttons kollidiert-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffino | Rezeptansicht</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="pics/newlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum Pen Script" rel="stylesheet">
+</head>
+<body id="r006-image">
+    <div id="resp-content">
+        <header>
+            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
+            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
+                <nav id="nav_nav">
+    
+                <ul>
+                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
+                    <a href="tipps.html" class="link"><li>Tipps & Tricks</li></a>
+                    <a href="r009.html" class="link"><li>Persönliche Empfehlung</li></a>
+                    <a href="https://www.buymeacoffee.com/muffino" class="link" target="_blank"><li>Spenden 🧁</li></a>
+                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
+                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
+                </ul>
+        </nav>
+    </header>
+    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
+    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
+        <div id="burger_dropdown"></div>
+        <div id="burger_lines">
+            <div id="burger_line1"></div>
+            <div id="burger_line2"></div>
+            <div id="burger_line3"></div>
+            <div id="burger_link" onclick="burger_openmenu()"></div>
+    
+        </div>
+        <div id="burger_menu">
+            <ul id="burger_content">
+                <!--Hier die Menüpunkte bearbeiten-->
+                <div id="searchbar"><input type="text" id="nav_searchbar-resp" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon_resp"></div>
+                <a href="rezepte.html" class="link"><li class="burger_li" id="burger_itm1">Rezepte</li></a>
+                <a href="tipps.html" class="link"><li class="burger_li" id="burger_itm2">Tipps & Tricks</li></a>
+                <a href="r009.html" class="link"><li class="burger_li" id="burger_itm3">Persönliche Empfehlung</li></a>
+                <a href="https://www.buymeacoffee.com/muffino" class="link"><li class="burger_li" id="burger_itm4">Spenden 🧁</li></a>
+    
+            </ul>
+        </div>
 
-Type / to search
 
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Files
-Go to file
-t
-pics
-README.md
-empfehlungen.html
-index.html
-r001.html
-r002.html
-r003.html
-r004.html
-r005.html
-r006.html
-r007.html
-r008.html
-r009.html
-rezepte.html
-scripts.js
-style.css
-test.html
-tipps.html
-Editing r004.html in MUFFINO
-BreadcrumbsMUFFINO
-/
-r004.html
-in
-main
 
-Edit
+    <!--Inhalt-->
+    <div id="r001-rezeptansicht">
+        <img src="pics/zoom_IN_symbol.png" alt="vergrößerung" id="bigger" onclick="textsizebig()">
+        <img src="pics/zoom_OUT_symbol.png" alt="vergrößerung" id="smaller" onclick="textsizesmall()">
+        <h1 id="r001-h1">Brombeer-Kokos-Muffins</h1>
+        <div id="r001-anleitung">
 
-Preview
-Indent mode
-
-Spaces
-Indent size
-
-4
-Line wrap mode
-
-No wrap
-Editing r004.html file contents
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
+            <span>1) Schlage zuerst die Eier schaumig auf und füge dann alle weiteren Zutaten für den Teig hinzu. </span><br>
+            <span>2) Lege eine Muffinform mit passend zurechtgeschnittenem Backpapier aus und gib je einen Esslöffel Teig hinein. Nun gibst du einen kleinen Klecks Marmelade auf den Teig und bedeckst diese mit einem weiteren Esslöffel Teig. </span> <br>
             <span>3) Nun werden die Muffins bei 160 °C für 30 Minuten gebacken. Nach dem Backen holst du die Muffins aus der Blechform und lässt sie auskühlen. </span><br>
             <span>4) Um die Creme zuzubereiten, gib Butter, Frischkäse und Puderzucker in eine große Schüssel und rühre die Zutaten, bis sie eine gleichmäßige Masse bilden. </span><br>
             <span>5) Nun teile die Creme in zwei gleiche Portionen. Zu einer Hälfte fügst du Kokosraspel, zur anderen Brombeermarmelade sowie etwas Lebensmittelfarbe. </span><br>
@@ -210,32 +126,3 @@ Editing r004.html file contents
 </body>
 <script src="scripts.js"></script>
 </html>
-um Pen Script" rel="stylesheet">
-</head>
-<body id="r005-image">
-    <div id="resp-content">
-        <header>
-            <a href="index.html"><img src="pics/logo_transparent.png" alt="logo_resp" id="logo_resp"></a>
-            <!--<nav id="nav_nav"  onmouseover="drop()" onmouseleave="up()">-->
-                <nav id="nav_nav">
-    
-                <ul>
-                    <a href="rezepte.html" class="link"><li>Rezepte</li></a>
-                    <a href="tipps.html" class="link"><li>Tipps & Tricks</li></a>
-                    <<a href="r009.html" class="link"><li>Persönliche Empfehlung</li></a>
-                    <a href="https://www.buymeacoffee.com/muffino" class="link" target="_blank"><li>Spenden 🧁</li></a>
-                    <li><input type="text" id="nav_searchbar" placeholder="Suche..."><img src="pics/search_106530.png" alt="seach_icon" id="search_icon"></li>
-                    <img src="pics/bookmarks_icon-icons.com_71248.png" alt="bookmark" id="nav_bookmark">
-                </ul>
-        </nav>
-    </header>
-    <div id="responsive-headbar" class="navbar"><a href="index.html"><span>MUFFINO</span></a></div>
-    <a href="index.html"><img src="pics/logo_transparent.png" alt="logo" id="logohead"></a>
-        <div id="burger_dropdown"></div>
-        <div id="burger_lines">
-            <div id="burger_line1"></div>
-            <div id="burger_line2"></div>
-            <div id="burger_line3"></div>
-            <div id="burger_link" onclick="burger_openmenu()"></div>
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-Editing MUFFINO/r004.html at main · Muffino-rezepte/MUFFINO
